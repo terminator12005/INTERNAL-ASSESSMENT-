@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog App Landing Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    /* Hero Section */
+    .hero {
+      background: linear-gradient(135deg, #ff416c, #833ab4);
+      color:black;
+      padding: 50px 20px;
+      display: flex;
+      flex-direction: row; /* Arrange text and image horizontally */
+      align-items: center;
+      justify-content: center;
+      gap: 20px; /* Add space between text and image */
+    }
+
+    .hero .text-content {
+      max-width: 400px;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .button-group {
+      display: flex;
+      flex-direction: column; /* Stack buttons vertically */
+      gap: 10px; /* Add space between buttons */
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+      border: 2px solid white;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 1rem;
+      color: white;
+      transition: all 0.3s ease;
+    }
+
+    .btn-light {
+      background: white;
+      color: black;
+    }
+
+    .btn-outline-light:hover {
+      background: white;
+      color: black;
+    }
+
+    .btn-light:hover {
+      opacity: 0.9;
+    }
+
+    .iphone img {
+      max-width: 300px;
+      border-radius: 30px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Features Section */
+    .features {
+      padding: 50px 20px;
+      background: #f9f9f9;
+      text-align: center;
+    }
+
+    .features .feature {
+      display: inline-block;
+      width: 250px;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .features .icon {
+      width: 50px;
+      height: 50px;
+      background: #e9ecef;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px;
+      font-size: 1.5rem;
+      color: #555;
+    }
+
+    .features h3 {
+      font-size: 1.25rem;
+      margin: 10px 0;
+    }
+
+    .features p {
+      color: #666;
+      font-size: 0.95rem;
+    }
+    /* Footer Section */
+#footer {
+  background: linear-gradient(to right, #ff5f6d, #5961f9);
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  margin: 0;
+  border: none;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer-container p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.footer-column {
+  text-align: left;
+}
+
+.footer-column h3 {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.footer-column li:hover {
+  color: #ddd;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="text-content">
+      <h1>Meet new and interesting dogs nearby.</h1>
+      <div class="button-group">
+        <a href="#" class="btn btn-light">
+          <img src="Apple-Logo.jpg" alt="Apple" style="width: 16px; margin-right: 10px;"> Download
+        </a>
+        <a href="#" class="btn btn-outline-light">
+          <img src="google-play-icon-2048x2048-487quz63.png" alt="Google Play" style="width: 16px; margin-right: 10px;"> Download
+        </a>
+      </div>
+    </div>
+    <div class="iphone">
+      <img src="iphone .png" alt="App Preview">
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="feature">
+      <div class="icon">✔</div>
+      <h3>Easy to use</h3>
+      <p>So easy to use, even your dog could do it.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🎓</div>
+      <h3>Elite Clientele</h3>
+      <p>We have all the dogs, the greatest dogs.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">❤</div>
+      <h3>Guaranteed to work</h3>
+      <p>Find the love of your dog's life or your money back.</p>
+    </div>
+  </section>
+  <!-- Testimonial Section -->
+<div class="testimonials" style="padding: 50px 20px; background: #f9f9f9; text-align: center;">
+    <div class="testimonial-content" style="margin-bottom: 40px;">
+      <h2 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 20px; color: #333;">
+        "I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof."
+      </h2>
+      <div class="testimonial-author" style="display: flex; align-items: center; justify-content: center; gap: 15px; margin-top: 15px;">
+        <img src="dog-img.jpg" alt="Pebbles" 
+             style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+        <p style="font-size: 1rem; color: #555; font-style: italic;">Pebbles, New York</p>
+      </div>
+    </div>
+    <div class="logos" style="display: flex; justify-content: center; align-items: center; gap: 20px; margin-top: 30px;">
+      <img src="techcrunch.png" alt="TechCrunch" style="height: 30px; object-fit: contain;">
+      <img src="mashable.png" alt="Mashable" style="height: 30px; object-fit: contain;">
+      <img src="bizinsider.png" alt="Business Insider" style="height: 30px; object-fit: contain;">
+      <img src="tnw.png" alt="The Next Web" style="height: 30px; object-fit: contain;">
+    </div>
+  </div>
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer-container">
+      <p>©️ TinDog</p>
+      <div class="footer-links">
+        <div class="footer-column">
+          <h3>Section</h3>
+          <ul>
+            <li>Home</li>
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>FAQs</li>
+            <li>About</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Section</h3>
+          <ul>
+            <li>Home</li>
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>FAQs</li>
+            <li>About</li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Section</h3>
+          <ul>
+            <li>Home</li>
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>FAQs</li>
+            <li>About</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+</body>
+</html>
